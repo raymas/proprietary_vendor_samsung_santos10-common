@@ -5,3 +5,54 @@
 soong_namespace {
 }
 
+cc_prebuilt_library_shared {
+	name: "libmultidisplay",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_x86: {
+			srcs: ["proprietary/vendor/lib/libmultidisplay.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsrv_init",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_x86: {
+			srcs: ["proprietary/vendor/lib/libsrv_init.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsrv_um",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_x86: {
+			srcs: ["proprietary/vendor/lib/libsrv_um.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+

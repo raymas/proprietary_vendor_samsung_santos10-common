@@ -177,7 +177,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/santos10-common/proprietary/vendor/lib/libmixvbp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmixvbp.so \
     vendor/samsung/santos10-common/proprietary/vendor/lib/libmixvbp_h264.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmixvbp_h264.so \
     vendor/samsung/santos10-common/proprietary/vendor/lib/libmixvbp_mpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmixvbp_mpeg4.so \
-    vendor/samsung/santos10-common/proprietary/vendor/lib/libmultidisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmultidisplay.so \
     vendor/samsung/santos10-common/proprietary/vendor/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecnativefeature.so \
     vendor/samsung/santos10-common/proprietary/vendor/lib/libsepdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsepdrm.so \
     vendor/samsung/santos10-common/proprietary/vendor/lib/libtbd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtbd.so \
@@ -193,7 +192,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/santos10-common/proprietary/vendor/lib/liboclcompiler.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboclcompiler.so \
     vendor/samsung/santos10-common/proprietary/vendor/lib/libpvr2d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr2d.so \
     vendor/samsung/santos10-common/proprietary/vendor/lib/libpvrANDROID_WSEGL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvrANDROID_WSEGL.so \
-    vendor/samsung/santos10-common/proprietary/vendor/lib/libsrv_init.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsrv_init.so \
-    vendor/samsung/santos10-common/proprietary/vendor/lib/libsrv_um.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsrv_um.so \
     vendor/samsung/santos10-common/proprietary/vendor/lib/libusc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libusc.so \
     vendor/samsung/santos10-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so
+
+PRODUCT_PACKAGES += \
+    libmultidisplay \
+    libsrv_init \
+    libsrv_um
